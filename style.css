@@ -22,6 +22,9 @@ ul {
 img {
 	max-width: 100%;
 }
+*:hover {
+	transition: 0.2s;
+}
 .container {
 	max-width: 1115px;
 	margin: 0 auto;
@@ -77,6 +80,7 @@ img {
 	font-family: inherit;
 	font-size: 12px;
 	color: inherit;
+	background-color: transparent;
 	text-transform: uppercase;
 	cursor: pointer;
 }
@@ -306,6 +310,9 @@ img {
 .main_form-text {
 	width: 100%;
 }
+.main_form input:focus {
+	outline: 2px solid #fc9329;
+}
 .main_form-contacts {
 	display: flex;
 	flex-wrap: wrap;
@@ -349,7 +356,8 @@ img {
 	position: fixed;
 	z-index: 2;
 	top: 20%;
-	left: 33%;
+	left:50%; 
+	margin-left:-12%;
 	padding: 35px;
 	border-radius: 10px;
 	text-align: center;
@@ -415,4 +423,198 @@ img {
 	background-color: #fc9329;
 	transition: 0.3s;
 }
+
+@media (max-width: 1150px) {
+	.container {
+	margin-right: 10px;
+	margin-left: 10px;		
+	}
+	.main_nav-list {
+	margin: 0;
+	}
+	.main_nav {
+		margin-right: 0;
+		flex-wrap: nowrap;
+	}
+	.main_nav-menu {
+		flex-wrap: nowrap;
+	}
+}
+@media (max-width: 1070px) {
+	.benifits_block {
+		max-width: 310px;
+		padding: 20px;			
+	}
+	.review_general-img {
+		max-width: 275px;
+	}
+	.benifits_block {
+		margin-left: 2px;
+		margin-right: 2px;		
+	}
+}
+
+@media (max-width: 1030px) {
+	.features-wrap {
+	max-width: 500px;
+	margin: 0 auto;
+	}
+	.review_general-img {
+		max-width: 250px;
+	}
+	.review_general-text {
+	margin-bottom: 50px;
+	}
+}
+
+@media (max-width: 990px) {
+	.benifits_block {
+		max-width: 280px;
+		padding: 10px;		
+	}
+	.review_general-bg {
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	.review_general-img {
+		display: none;
+	}
+	.review_general-text {
+		max-width: 435px;
+	}
+	.review_general-main {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		padding-bottom: 40px;
+		text-align: center;
+	}
+	.benifits_outcome {
+		padding-right: 5px;
+		padding-left: 5px;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		text-align: center;
+		background-image: none;
+	}
+	.outcome_text {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.review_general-title {
+		margin-bottom: 15px;
+	}
+	.popup {
+		margin-left: -25%;
+	}
+}
+@media (max-width: 880px) {
+	.benifits_block {
+		max-width: 290px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 20px;	
+	}
+	.main_form input {
+		width: 350px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.button--right {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.benifits {
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+		.make_order {
+		padding-bottom: 10px;
+	}
+	.main_form {
+		margin-top: 15px;
+	}
+	.features {
+		padding-bottom: 10px;
+	}
+	.popup {
+		left: 42%
+	}
+}
+@media (max-width: 610px) {
+	.submenu_nav::after {
+		display: none;
+	}
+	.popup {
+		background-image: none;
+		padding: 15px;
+		font-size: 12px;
+	}	
+	.popup::after,
+	.popup::before,
+	.button--position {
+		display: none;
+	}
+	.button--high {
+		margin-top: 10px;
+		padding: 10px;
+		font-size: 12px;
+	} 
+}
+
+@media (max-width: 600px) {
+	.submenu_nav-title,
+	.submenu_nav-item_checked::before,
+	.submenu_nav::after,
+	.submenu_nav-item:hover::before {
+		display: none;
+	}
+}
+@media (max-width: 580px) {
+	.main_nav-item,
+	.main_nav-menu,
+	.main_nav,
+	.main_nav-button {
+		display: block;
+	}
+	.features_block {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.review_general-title,
+	.section_header {
+		font-size: 20px;
+	}
+	.submenu_header {
+		font-size: 12px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+		.benifits_outcome {
+		text-align: left;
+	}
+		.popup {
+		left: 35%
+	}
+}
+@media (max-width: 375px) {
+	.submenu_nav-item {
+		display: block;
+		padding-bottom: 8px;
+	}
+	.main_form input {
+		width: 250px;
+	}
+	.review_general-title,
+	.section_header {
+		font-size: 20px;
+	}
+	.popup {
+		left: 28%
+	}
 }
